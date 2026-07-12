@@ -13,11 +13,13 @@ Instead of relying on a customer-facing chatbot, the Hackdonald Orchestrator act
 3. **Frontend & Design Agent:** Selects a conceptual React/Next.js template based on the customer's subscription tier, applies their branding, and wires the frontend to the backend APIs to generate a fully functional website prototype.
 
 ## Documentation
-The architectural blueprint for this system is located in the root directory:
-- `01-system-orchestration.md`
-- `02-onboarding-and-sales.md`
-- `03-template-engine-and-prototyping.md`
-- `04-backend-and-infrastructure.md`
+The architectural blueprint for this system is divided into two categories:
 
-## Master Prompt
-A ready-to-use `master-prompt.md` is included in the repository. You can paste this prompt into any advanced Large Language Model (like Claude, ChatGPT, or Gemini) to instantly initialize it as the Hackdonald Orchestrator and begin processing customer contracts.
+### Main Architecture (`main/`)
+- `main/architecture-overview.md`
+- `main/frontend-engine.md`
+- `main/backend-infrastructure.md`
+
+### Context & Inputs (`context/`)
+- `context/onboarding-schema.md`
+- `context/llm-master-prompt.md` (A ready-to-use prompt to initialize the Orchestrator on any LLM)
